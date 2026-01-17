@@ -1,10 +1,10 @@
-🐍 Quadrant-Based Hand Gesture Snake Game
+**🐍 Quadrant-Based Hand Gesture Snake Game**
 
 A stable, high-performance hand-gesture–controlled Snake Game built using Python, OpenCV, MediaPipe, and Pygame.
 
 Instead of complex gestures or AI logic, this project uses a quadrant-based control system, making it extremely reliable, smooth, and beginner-friendly.
 
-🚀 Project Overview
+**🚀 Project Overview**
 
 This project reimagines the classic Nokia Snake Game using real-time hand tracking via a webcam.
 
@@ -12,7 +12,7 @@ The camera frame is divided into four quadrants, and the snake’s direction is 
 
 This approach avoids jitter, crashes, and unstable behavior commonly found in gesture-based games.
 
-🎮 How the Control System Works
+**🎮 How the Control System Works**
 
 The webcam frame is divided into four equal quadrants:
 
@@ -22,7 +22,7 @@ The webcam frame is divided into four equal quadrants:
 |   LEFT      |  DOWN   |
 +-----------------------+
 
-🖐️ Control Mapping
+**🖐️ Control Mapping**
 Hand Position (Quadrant)	Snake Direction
 Top-Left	UP
 Top-Right	RIGHT
@@ -31,7 +31,7 @@ Bottom-Right	DOWN
 
 The center of the detected hand is calculated using MediaPipe landmarks and mapped directly to these quadrants.
 
-🛠️ Technologies Used
+**🛠️ Technologies Used**
 
 Python 3.10+
 
@@ -43,7 +43,7 @@ Pygame – game rendering & logic
 
 NumPy – internal calculations
 
-⚡ Performance Optimizations
+**⚡ Performance Optimizations**
 
 To ensure smooth gameplay on low-end systems:
 
@@ -57,9 +57,9 @@ Minimal state changes per frame
 
 This results in high FPS and stable gameplay.
 
-✨ Features Included
+**✨ Features Included**
 
-✅ Real-time hand tracking
+* ✅ Real-time hand tracking
 ✅ Quadrant-based gesture control
 ✅ Grayscale camera feed (better performance)
 ✅ Stable snake movement (no jitter)
@@ -67,11 +67,11 @@ This results in high FPS and stable gameplay.
 ✅ Simple & adjustable snake speed
 ✅ Beginner-friendly and demo-ready
 
-❌ Features Removed (and WHY)
+**❌ Features Removed (and WHY)**
 
 During development, several features were intentionally removed to improve stability and usability.
 
-❌ AI Auto-Play Mode
+**❌ AI Auto-Play Mode**
 
 Why removed:
 
@@ -81,11 +81,11 @@ Caused unexpected direction changes
 
 Reduced control predictability
 
-Lesson:
+**Lesson:**
 
 Sometimes simplicity beats intelligence in HCI systems.
 
-❌ Distance-Based Speed Control
+**❌ Distance-Based Speed Control**
 
 Why removed:
 
@@ -99,7 +99,7 @@ Lesson:
 
 User comfort is more important than dynamic complexity.
 
-❌ Complex Gesture Recognition (Finger Counts / Pinch / Palm Detection)
+**❌ Complex Gesture Recognition (Finger Counts / Pinch / Palm Detection)**
 
 Why removed:
 
@@ -145,26 +145,30 @@ Educational CV projects
 
 Accessibility-focused interfaces
 
-▶️ How to Run the Project
+**▶️ How to Run the Project**
 1️⃣ Clone the Repository
+'''base
 git clone https://github.com/your-username/Quadrant-Gesture-Snake-Game.git
 cd Quadrant-Gesture-Snake-Game
 
 2️⃣ Create Virtual Environment (Recommended)
+'''base
 python -m venv .venv
 .venv\Scripts\activate
 
 3️⃣ Install Dependencies
+'''base
 pip install -r requirements.txt
 
 4️⃣ Run the Game
+'''base
 python main.py
 
-⚙️ Customization
+**⚙️ Customization**
 Change Snake Speed
 
 Inside main.py:
-
+'''base
 SNAKE_SPEED = 5
 
 Value	Speed
@@ -176,7 +180,7 @@ Value	Speed
 
 Add a screen recording as demo.gif to visually showcase gameplay.
 
-Recommended tools:
+**Recommended tools:**
 
 OBS Studio
 
@@ -184,7 +188,7 @@ ScreenToGif
 
 Xbox Game Bar (Win + Alt + R)
 
-📚 What You Can Learn From This Project
+**📚 What You Can Learn From This Project**
 
 Practical Computer Vision
 
@@ -198,21 +202,21 @@ HCI design trade-offs
 
 Game logic integration
 
-🎓 Interview-Ready Explanation
+**🎓 Interview-Ready Explanation**
 
 “I initially tried AI and complex gesture logic, but they caused instability.
 I redesigned the system using quadrant-based spatial mapping, which significantly improved performance, usability, and reliability.”
 
 This explanation shows engineering maturity.
 
-🙌 Author
+**🙌 Author**
 
 Suraj Saw
 📌 Computer Vision & AI Enthusiast
 
 If you find this project useful, ⭐ star the repository!
 
-🚀 Future Improvements (Optional)
+**🚀 Future Improvements (Optional)**
 
 Highlight active quadrant
 
